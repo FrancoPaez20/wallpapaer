@@ -40,14 +40,20 @@
 </head>
 
 <body>
-	<video playsinline autoplay muted loop src="./src/a.mp4"></video>
-	<div></div>
-	<main id="main">
+	<video id="video" playsinline autoplay muted loop src="./src/b.mp4"></video>
+	<main id="main"></main>
 
-
-	</main>
+	<div class="container" id="container">
+		<span class="material-icons close" id="close">close</span>
+		<div id="popUp">
+			<input type="file" name="video" id="videoSrc">
+			<label for="videoSrc"><span class="material-icons">backup</span>Cargar video</label>
+		</div>
+	</div>
 
 	<script src='./js/index.js' type='text/javascript'></script>
+	<script src='./js/indexed.js' type='text/javascript'></script>
+	<script src='./js/popup.js' type='text/javascript'></script>
 </body>
 
 </html>
